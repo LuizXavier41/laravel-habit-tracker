@@ -9,7 +9,7 @@ class UserController extends Controller
 {
 
     public $name = 'Luiz';
-    public $subjects = ['Algebra', 'Calculo', 'PROG', 'Analise'];
+    public $subjects = ['Algebra', 'Calculo', 'PROG'];
 
 
 
