@@ -1,23 +1,12 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<x-layout>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ config('app.name') }}</title>
-</head>
-
-<body>
-
-
-    <h1>WELCOME TO THE HOME PAGE!</h1>
-    <p>Olá {{ $name }}, essas são as matérias:</p>
+    <h1 class='text-2xl font-bold'>WELCOME TO THE HOME PAGE!</h1>
+    <p class='text-red-700'>Olá {{ $name }}, essas são as matérias:</p>
 
 
     @foreach ($subjects as $s)
-        <li>{{ $s }}</li>
+        <li class='text-red-400'>{{ $s }}</li>
     @endforeach
 
-</body>
 
-</html>
+</x-layout>
